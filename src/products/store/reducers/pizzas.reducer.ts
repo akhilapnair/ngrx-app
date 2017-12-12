@@ -1,22 +1,35 @@
-// import { Pizza } from '../../models/pizza.model';
-// import * as fromPizzas from '../action/pizzas.action';
-// export interface PizzaState {
-//                                     data: Pizza[],
-//                                     loaded:boolean,
-//                                     loading:boolean
-//                              }
+import { Pizza } from '../../models/pizza.model';
+import * as fromPizzas from '../action/pizzas.action';
+export interface PizzaState {
+                                    data: Pizza[],
+                                    loaded:boolean,
+                                    loading:boolean
+                             }
 
-// export const initialState: PizzaState = {
-//                                     data: [],
-//                                     loaded:false,
-//                                     loading:false
-//                                  };   git init
+export const initialState: PizzaState = {
+                                    data: [],
+                                    loaded:false,
+                                    loading:false
+                                 };   
 
-// export function reducer(state: initialState ,
-//                         action: fromPizzas.pizzasAction) : PizzaState {
-//     switch (action.type) {
-//         case 'LoadPizza': {}
-//     }
-//     return state;
+export function reducer(state= initialState , action: fromPizzas.pizzasAction): PizzaState {
+        switch (action.type) {
+            case fromPizzas.LOAD_PIZZAS: {
+                return {
+                    ...state,loading:true
+                };
+            }
+            case fromPizzas.LOAD_PIZZAS_FAIL: {
+                return {
+                    ...state,loading:false,loaded:true
+                };
+            }
+            case fromPizzas.LOAD_PIZZAS_SUCESS: {
+                return {
+                    ...state,loading:false,loaded:false
+                };
+            }
+        }
+        return state;
 
-// }
+}
