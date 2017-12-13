@@ -116,16 +116,8 @@
           "name": "olive"
         },
         {
-          "id": 2,
-          "name": "bacon"
-        },
-        {
           "id": 3,
           "name": "basil"
-        },
-        {
-          "id": 1,
-          "name": "anchovy"
         },
         {
           "id": 8,
@@ -138,10 +130,6 @@
         {
           "id": 9,
           "name": "pepper"
-        },
-        {
-          "id": 5,
-          "name": "mozzarella"
         },
         {
           "id": 10,
