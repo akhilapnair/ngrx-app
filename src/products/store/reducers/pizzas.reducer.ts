@@ -8,54 +8,7 @@ export interface PizzaState {
 
 export const initialState: PizzaState = {
                                     data: [  {
-                                        "name": "Seaside Surfin'",
-                                        "toppings": [
-                                          {
-                                            "id": 6,
-                                            "name": "mushroom"
-                                          },
-                                          {
-                                            "id": 7,
-                                            "name": "olive"
-                                          },
-                                          {
-                                            "id": 2,
-                                            "name": "bacon"
-                                          },
-                                          {
-                                            "id": 3,
-                                            "name": "basil"
-                                          },
-                                          {
-                                            "id": 1,
-                                            "name": "anchovy"
-                                          },
-                                          {
-                                            "id": 8,
-                                            "name": "onion"
-                                          },
-                                          {
-                                            "id": 11,
-                                            "name": "sweetcorn"
-                                          },
-                                          {
-                                            "id": 9,
-                                            "name": "pepper"
-                                          },
-                                          {
-                                            "id": 5,
-                                            "name": "mozzarella"
-                                          },
-                                          {
-                                            "id": 10,
-                                            "name": "pepperoni"
-                                          },
-                                          {
-                                            "id": 12,
-                                            "name": "tomato"
-                                          }
-                                        ],
-                                        "id": 2
+                                        "name": "Seaside Surfin'"
                                       }],
                                     loaded:false,
                                     loading:false

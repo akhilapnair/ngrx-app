@@ -42,5 +42,6 @@ export const ROUTES: Routes = [
   providers: [...fromServices.services],
   declarations: [...fromContainers.containers, ...fromComponents.components],
   exports: [...fromContainers.containers, ...fromComponents.components],
+  
 })
 export class ProductsModule {}
