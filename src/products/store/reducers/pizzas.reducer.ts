@@ -18,6 +18,7 @@ export function reducer(
 ): PizzaState {
   switch (action.type) {
     case fromPizzas.LOAD_PIZZAS: {
+      console.log('@loadkjklj');
       return {
         ...state,
         loading: true
@@ -31,11 +32,12 @@ export function reducer(
       };
     }
     case fromPizzas.LOAD_PIZZAS_SUCESS: {
-      console.log(action.payload);
+      const data = action.payload;
       return {
         ...state,
         loading: false,
-        loaded: false
+        loaded: false,
+        data
       };
     }
   }
